@@ -1,14 +1,7 @@
 package guru.springframework.service;
 
-import java.util.Set;
-
 import guru.springframework.model.Pet;
 
-public interface PetService {
+public interface PetService extends CrudService<Pet, Long>  {
 	
-	Pet findById(long id);
-	
-	Pet save(Pet pet);
-	
-	Set<Pet> findAll();
 }
